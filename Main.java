@@ -14,37 +14,37 @@ public class Main {
         String fileName = "";
         switch(fileChosen){
             case 1:
-                fileName = "random100.txt";
+                fileName = "data/random100.txt";
                 setSize = 100;
                 SortCompare.chooseSort(setSize, fileName);
                 break;
             case 2:
-                fileName = "random25000.txt";
+                fileName = "data/random25000.txt";
                 setSize = 25000;
                 SortCompare.chooseSort(setSize, fileName);
                 break;
             case 3:
-                fileName = "random50000.txt";
+                fileName = "data/random50000.txt";
                 setSize = 50000;
                 SortCompare.chooseSort(setSize, fileName);
                 break;
             case 4:
-                fileName = "random75000.txt";
+                fileName = "data/random75000.txt";
                 setSize = 75000;
                 SortCompare.chooseSort(setSize, fileName);
                 break;
             case 5:
-                fileName = "random100000.txt";
+                fileName = "data/random100000.txt";
                 setSize = 100000;
                 SortCompare.chooseSort(setSize, fileName);
                 break;
             case 6:
-                fileName = "totallyreversed.txt";
+                fileName = "data/totallyreversed.txt";
                 setSize = 100000;
                 SortCompare.chooseSort(setSize, fileName);
                 break;
             case 7:
-                fileName = "almostsorted.txt";
+                fileName = "data/almostsorted.txt";
                 setSize = 100000;
                 SortCompare.chooseSort(setSize, fileName);
                 break;

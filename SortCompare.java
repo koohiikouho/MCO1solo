@@ -59,7 +59,7 @@ public class SortCompare {
 
         for( int i = 0; i < 30; ++i){
             //grabs it from file specified
-           Record result[] = FileReader.readFile("/home/kohiko/Documents/Projects/Github/MCO1-Java/starter_code_java/data/" + fileName);
+           Record result[] = FileReader.readFile(fileName);
            //this ^^ is in here to reset the array for every iteration
            long startTime = System.currentTimeMillis(); //start timer
            SortingAlgorithms.selectionSort(result, setSize);
@@ -76,7 +76,7 @@ public class SortCompare {
 
         for( int i = 0; i < 30; ++i){
             //grabs it from file specified
-           Record result[] = FileReader.readFile("/home/kohiko/Documents/Projects/Github/MCO1-Java/starter_code_java/data/" + fileName);
+           Record result[] = FileReader.readFile(fileName);
            //this ^^ is in here to reset the array for every iteration
            long startTime = System.currentTimeMillis(); //start timer
            SortingAlgorithms.insertionSort(result, setSize);
@@ -93,7 +93,7 @@ public class SortCompare {
 
         for( int i = 0; i < 30; ++i){
             //grabs it from file specified
-           Record result[] = FileReader.readFile("/home/kohiko/Documents/Projects/Github/MCO1-Java/starter_code_java/data/" + fileName);
+           Record result[] = FileReader.readFile(fileName);
            //this ^^ is in here to reset the array for every iteration
            long startTime = System.currentTimeMillis(); //start timer
            SortingAlgorithms.mergeSort(result, 0, setSize);
@@ -109,7 +109,7 @@ public class SortCompare {
         Record[] returnArr = new Record[setSize];
         for( int i = 0; i < 30; ++i){
             //grabs it from file specified
-           Record result[] = FileReader.readFile("/home/kohiko/Documents/Projects/Github/MCO1-Java/starter_code_java/data/" + fileName);
+           Record result[] = FileReader.readFile(fileName);
            //this ^^ is in here to reset the array for every iteration
            long startTime = System.currentTimeMillis(); //start timer
            SortingAlgorithms.shellsSort(result, setSize);
