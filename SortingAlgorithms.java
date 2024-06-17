@@ -12,16 +12,14 @@ public class SortingAlgorithms {
 
     public void insertionSort(Record[] arr, int n) {
         // DONE
-        // might ask miss if you could copy off of geeks for geeks
         int i, j;
         Record key;
         for(i = 1; i < n; ++i){
             key = arr[i];
             j = i - 1;
-
             while(j >= 0 && arr[j].getIdNumber() > key.getIdNumber()){
-                arr[j + 1] = arr[j];
-                j = j - 1;
+                arr[j+1] = arr[j];
+                j--;
             }
             arr[j + 1] = key;
         }
@@ -56,7 +54,6 @@ public class SortingAlgorithms {
     private void mergeSortRecursion(Record[] arr, int left, int right){
         if (left < right){ //stops until right becomes 0, right is the one that is decremented
             int middle = left + (right - left) / 2;
-
             mergeSortRecursion(arr, left, middle); //left division
             mergeSortRecursion(arr, middle + 1, right); //right divsion
             mergeSortSortArray(arr, left, middle, right); //does the sorting
@@ -103,7 +100,6 @@ public class SortingAlgorithms {
                 int j;
                 for(j = i; j >= gap && arr[j - gap].getIdNumber() > tempArr.getIdNumber(); j-= gap)
                     arr[j] = arr[j - gap];
-
                 arr[j] = tempArr;
             }
         }
